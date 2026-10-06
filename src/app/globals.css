@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+:root {
+  --background: #070a13;
+  --foreground: #e6edf7;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: rgba(56, 189, 248, 0.35);
+}

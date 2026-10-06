@@ -1,0 +1,100 @@
+export const CATEGORIES = {
+  "all": { id: "all", label: "All Trends", color: "slate" },
+  "software-testing": {
+    id: "software-testing",
+    label: "Software Testing",
+    color: "cyan",
+    description: "Automation, frameworks, strategy, CI/CD and craft updates",
+  },
+  "ai-testing": {
+    id: "ai-testing",
+    label: "AI Testing",
+    color: "violet",
+    description: "AI/ML driven testing, GenAI in QA, self-healing and agentic tests",
+  },
+};
+
+export const SOURCES = [
+  {
+    id: "ministry-of-testing",
+    name: "Ministry of Testing",
+    homepage: "https://www.ministryoftesting.com",
+    feedUrl: "https://feeds.feedburner.com/ministryoftesting",
+    categories: ["software-testing"],
+    description: "World's largest testing community — articles, trends and conversations.",
+  },
+  {
+    id: "google-testing",
+    name: "Google Testing Blog",
+    homepage: "https://testing.googleblog.com",
+    feedUrl: "https://testing.googleblog.com/feeds/posts/default?alt=rss",
+    categories: ["software-testing"],
+    description: "Insights on testing practices at Google scale.",
+  },
+  {
+    id: "browserstack",
+    name: "BrowserStack Blog",
+    homepage: "https://www.browserstack.com/blog",
+    feedUrl: "https://www.browserstack.com/blog/feed/",
+    categories: ["software-testing"],
+    description: "Guides on test automation, devices, CI/CD and quality engineering.",
+  },
+  {
+    id: "software-testing-help",
+    name: "Software Testing Help",
+    homepage: "https://www.softwaretestinghelp.com",
+    feedUrl: "https://www.softwaretestinghelp.com/feed/",
+    categories: ["software-testing"],
+    description: "Tutorials, tools roundups and QA career resources.",
+  },
+  {
+    id: "testrail",
+    name: "TestRail Blog",
+    homepage: "https://testrail.com/blog",
+    feedUrl: "https://testrail.com/blog/feed/",
+    categories: ["software-testing"],
+    description: "Test management, strategy and team process thinking.",
+  },
+  {
+    id: "applitools",
+    name: "Applitools Blog",
+    homepage: "https://applitools.com/blog",
+    feedUrl: "https://applitools.com/feed/",
+    categories: ["ai-testing"],
+    description: "Visual AI and intelligent test automation insights.",
+  },
+  {
+    id: "mabl",
+    name: "Mabl",
+    homepage: "https://mabl.com/blog",
+    feedUrl: "https://mabl.com/blog/rss.xml",
+    categories: ["ai-testing"],
+    description: "Low-code, AI-powered test automation and quality engineering.",
+  },
+  {
+    id: "testrigor",
+    name: "testrigor",
+    homepage: "https://testrigor.com/blog",
+    feedUrl: "https://testrigor.com/blog/feed/",
+    categories: ["ai-testing"],
+    description: "AI-driven, codeless test automation for web, mobile and API.",
+  },
+  {
+    id: "testsigma",
+    name: "Testsigma",
+    homepage: "https://testsigma.com/blog",
+    feedUrl: "https://testsigma.com/blog/feed/",
+    categories: ["ai-testing"],
+    description: "Agile test automation platform with AI-assisted authoring.",
+  },
+  {
+    id: "qa-wolf",
+    name: "QA Wolf",
+    homepage: "https://www.qawolf.com/blog",
+    feedUrl: "https://www.qawolf.com/blog/rss.xml",
+    categories: ["ai-testing", "software-testing"],
+    description: "AI-native autonomous test creation and maintenance.",
+  },
+];
+
+export const SOURCE_MAP = Object.fromEntries(SOURCES.map((s) => [s.id, s]));
